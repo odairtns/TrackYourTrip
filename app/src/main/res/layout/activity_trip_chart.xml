@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.TripChart"
+    >
+<TextView
+    android:id="@+id/tripchartHeader"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="@string/expense_distribution"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintRight_toRightOf="parent"
+    android:layout_marginTop="10dp"
+    android:gravity="center"
+    android:textSize="30sp"
+    android:textStyle="bold|italic"></TextView>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/tripchartInfo"
+        app:layout_constraintTop_toBottomOf="@+id/tripchartHeader"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintVertical_bias="0.05">
+    <com.github.mikephil.charting.charts.PieChart
+        android:id="@+id/tripchartPiechart"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+    </com.github.mikephil.charting.charts.PieChart>
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/tripchartInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/chart_info"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="20dp"
+        android:gravity="right"
+        android:textColor="@color/colorLightRed"
+        android:textSize="15sp"
+        ></TextView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,153 @@
+<resources>
+    <string name="app_name">Track Your Trip</string>
+    <string name="food">Food</string>
+    <string name="drinks">Drinks</string>
+    <string name="tickets">Tickets</string>
+    <string name="entertainment">Entertainment</string>
+    <string name="transport">Transport</string>
+    <string name="trip">Trip</string>
+    <string name="id" translatable="false">ID:</string>
+    <string name="description">Description</string>
+    <string name="date">Date</string>
+    <string name="name">Name</string>
+    <string name="trip_id">Trip ID</string>
+    <string name="start_date">Start Date:</string>
+    <string name="finish_date">Finish Date:</string>
+    <string name="destination">Destination:</string>
+    <string name="save">Save</string>
+    <string name="amount">Amount</string>
+    <string name="currency">Currency</string>
+    <string name="exp_type">Expense Type</string>
+    <string name="place">Place</string>
+    <string name="go">GO</string>
+    <string name="new_trip">New Trip</string>
+    <string name="mainScreenTitle">Track Your Trip!</string>
+    <string name="searchTrip">Search</string>
+    <string name="label">Label</string>
+    <string name="label_text">Insert Trip Name</string>
+    <string name="multiple_currency">Multiple Currency</string>
+    <string name="insert_record_text">Insert Record</string>
+    <string name="please_insert_label">Please insert label</string>
+    <string name="please_insert_currency">Please insert currency</string>
+    <string name="please_insert_label_currency">Please insert label and currency</string>
+    <string name="mandatory_fields">All fields are mandatory</string>
+    <string name="total_amount">Total Amount</string>
+    <string name="title_activity_trip_currencies">TripCurrencies</string>
+    <string name="std_currency">Standard Currency *</string>
+    <string name="std_currency_">Standard Currency</string>
+    <string name="exg_rate">Exchange Rate</string>
+    <string name="back">Back</string>
+    <string name="details">Details</string>
+    <string name="clickfordetails">Click for details</string>
+    <string name="amount_std_currency">Amount Std Curr.</string>
+    <string name="currencyList">Currency List</string>
+    <string name="type">Type</string>
+    <string name="delete">Delete</string>
+    <string name="cancel">Cancel</string>
+    <string name="saveandadd">Save and Add</string>
+    <string name="aed" translatable="false">UAE Dirham</string>
+    <string name="ars" translatable="false">Argentine Peso</string>
+    <string name="aud" translatable="false">Australian Dollar</string>
+    <string name="bgn" translatable="false">Bulgarian Lev</string>
+    <string name="brl" translatable="false">Brazilian Real</string>
+    <string name="bsd" translatable="false">Bahamian Dollar</string>
+    <string name="cad" translatable="false">Canadian Dollar</string>
+    <string name="chf" translatable="false">Swiss Franc</string>
+    <string name="clp" translatable="false">Chilean Peso</string>
+    <string name="cny" translatable="false">Chinese Renminbi</string>
+    <string name="cop" translatable="false">Colombian Peso</string>
+    <string name="czk" translatable="false">Czech Koruna</string>
+    <string name="dkk" translatable="false">Danish Krone</string>
+    <string name="dop" translatable="false">Dominican Peso</string>
+    <string name="egp" translatable="false">Egyptian Pound</string>
+    <string name="eur" translatable="false">Euro</string>
+    <string name="fjd" translatable="false">Fiji Dollar</string>
+    <string name="gbp" translatable="false">Pound Sterling</string>
+    <string name="gtq" translatable="false">Guatemalan Quetzal</string>
+    <string name="hkd" translatable="false">Hong Kong Dollar</string>
+    <string name="hrk" translatable="false">Croatian Kuna</string>
+    <string name="huf" translatable="false">Hungarian Forint</string>
+    <string name="idr" translatable="false">Indonesian Rupiah</string>
+    <string name="ils" translatable="false">Israeli Shekel</string>
+    <string name="inr" translatable="false">Indian Rupee</string>
+    <string name="isk" translatable="false">Icelandic Krona</string>
+    <string name="jpy" translatable="false">Japanese Yen</string>
+    <string name="krw" translatable="false">South Korean Won</string>
+    <string name="kzt" translatable="false">Kazakhstani Tenge</string>
+    <string name="mxn" translatable="false">Mexican Peso</string>
+    <string name="myr" translatable="false">Malaysian Ringgit</string>
+    <string name="nok" translatable="false">Norwegian Krone</string>
+    <string name="nzd" translatable="false">New Zealand Dollar</string>
+    <string name="pab" translatable="false">Panamanian Balboa</string>
+    <string name="pen" translatable="false">Peruvian Nuevo Sol</string>
+    <string name="php" translatable="false">Philippine Peso</string>
+    <string name="pkr" translatable="false">Pakistani Rupee</string>
+    <string name="pln" translatable="false">Polish Zloty</string>
+    <string name="pyg" translatable="false">Paraguayan Guarani</string>
+    <string name="ron" translatable="false">Romanian Leu</string>
+    <string name="rub" translatable="false">Russian Ruble</string>
+    <string name="sar" translatable="false">Saudi Riyal</string>
+    <string name="sek" translatable="false">Swedish Krona</string>
+    <string name="sgd" translatable="false">Singapore Dollar</string>
+    <string name="thb" translatable="false">Thai Baht</string>
+    <string name="TRY" translatable="false">Turkish Lira</string>
+    <string name="twd" translatable="false">New Taiwan Dollar</string>
+    <string name="uah" translatable="false">Ukrainian Hryvnia</string>
+    <string name="usd" translatable="false">US Dollar</string>
+    <string name="uyu" translatable="false">Uruguayan Peso</string>
+    <string name="vnd" translatable="false">Vietnamese Dong</string>
+    <string name="zar" translatable="false">South African Rand</string>
+    <string name="date_updated">Updated Date</string>
+    <string name="time_updated">Updated Time</string>
+    <string name="trip_name">Trip name *</string>
+    <string name="insert_details">Insert details about your trip</string>
+    <string name="insert_std_currency">Insert Std. Currency</string>
+    <string name="trip_summary">Summary:</string>
+    <string name="trip_details">Details</string>
+    <string name="no_record_added">No records.\n Press the \"+\" button to create one.</string>
+    <string name="budget">Budget</string>
+    <string name="insert_budget">Insert Trip Budget</string>
+    <string name="balance">Balance</string>
+    <string name="edit">Edit</string>
+    <string name="update_trip">Update Trip</string>
+    <string name="wrong_currency">Currency is not included on Trip Currency List. \n Please Add before continuing</string>
+    <string name="update">Update</string>
+    <string name="update_infomration">Update information</string>
+    <string name="send_email">Send E-mail</string>
+    <string name="add_exp_type">Add Expense Type</string>
+    <string name="add">Add</string>
+    <string name="about">About</string>
+    <string name="error">Error</string>
+    <string name="std_currency_update_error">It is not possible to update the standard currency</string>
+    <string name="non_zero">Value has to be greater than zero</string>
+    <string name="non_empty">Field cannot be empty</string>
+    <string name="mandatory">* Mandatory</string>
+    <string name="no_expense_added">No expenses added yet</string>
+    <string name="delete_warning_message">Are you sure you want to delete record?</string>
+    <string name="warning">Warning</string>
+    <string name="no">No</string>
+    <string name="yes">Yes</string>
+    <string name="view_expenses">View Expenses</string>
+    <string name="configexplist">Configure Expense List</string>
+    <string name="configexptype">Configure Expense Type</string>
+    <string name="aboutmessage">Developed by Odair Tomaz.</string>
+    <string name="view_chart">View Chart</string>
+    <string name="edit_exchange_rate">Exchange Rate</string>
+    <string name="expense_results">Expense Results</string>
+    <string name="chart_info">* Click on the chart to see amount in</string>
+    <string name="expense_distribution">Expenses Distribution</string>
+    <string name="order">Order</string>
+    <string name="erro_insert_record">Error inserting record</string>
+    <string name="insert_here">Insert here</string>
+    <string name="trip_info">Trip Info</string>
+    <string name="trip_info_">Trip Info:</string>
+    <string name="payment">Payment</string>
+    <string name="payment_method">Payment Method</string>
+    <string name="trip_currency">Trip Currency</string>
+    <string name="not_std_currency">Currency is not the Standard one</string>
+    <string name="correct_before_continue">Please correct before continuing</string>
+    <string name="rate">Rate</string>
+    <string name="chart">Chart</string>
+    <string name="trip_share_subject">Trip Details</string>
+
+</resources>

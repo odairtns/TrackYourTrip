@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardCornerRadius="5dp"
+        android:layout_marginBottom="@dimen/cardview_compat_inset_shadow">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="5dp">
+
+            <TextView
+                android:id="@+id/viewtripcurrencyDisplayOrder"
+                android:layout_width="55dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:textSize="20sp"
+                android:layout_gravity="center_vertical"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+
+                />
+
+        <TextView
+            android:id="@+id/viewtripcurrencyCurrency"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_toRightOf="@+id/viewtripcurrencyDisplayOrder"
+            android:textSize="20sp"
+            android:layout_gravity="center_vertical"
+            android:layout_alignParentTop="true"
+
+             />
+
+            <TextView
+                android:id="@+id/viewtripcurrencyExgRate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginStart="5dp"
+                android:layout_toStartOf="@+id/viewtripcurrencyEditButton"
+                android:layout_toEndOf="@+id/viewtripcurrencyCurrency"
+                android:textSize="20sp"
+                android:textAlignment="center"
+                />
+
+        <Button
+            android:id="@+id/viewtripcurrencyEditButton"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="@string/edit"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/round_button"
+            android:layout_marginEnd="10dp"
+            android:layout_alignParentTop="true"
+            android:textAlignment="center"
+            android:layout_marginStart="5dp"
+            />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".Activities.ViewTripRecord">
+
+    <RelativeLayout
+        android:id="@+id/viewrecordLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/viewrecordSummaryText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="@dimen/cardview_compat_inset_shadow"
+            android:gravity="center"
+            android:text="@string/trip_summary"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/viewrecordTripLabelText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/viewrecordSummaryText"
+            android:layout_alignParentStart="true"
+            android:padding="3dp"
+            android:text="@string/trip"
+            android:textSize="15sp"
+            android:textStyle="italic|bold"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/viewrecordTripLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/viewrecordSummaryText"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="95dp"
+            android:padding="3dp"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/viewrecordTripBudgetText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/viewrecordTripLabelText"
+            android:layout_alignParentStart="true"
+            android:padding="3dp"
+            android:text="@string/budget"
+            android:textSize="15sp"
+            android:textStyle="italic|bold" />
+
+        <TextView
+            android:id="@+id/viewrecordTripBudget"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/viewrecordTripLabelText"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="92dp"
+            android:padding="3dp"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/viewrecordTotalAmountText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/viewrecordTripBudgetText"
+            android:layout_alignParentStart="true"
+            android:padding="3dp"
+            android:text="@string/amount"
+            android:textSize="15sp"
+            android:textStyle="italic|bold" />
+
+        <TextView
+            android:id="@+id/viewrecordStdCurrency"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/viewrecordTripBudgetText"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="58dp"
+            android:padding="3dp"
+            android:textSize="15sp"
+            android:text="ZAR"
+            android:textStyle="italic|bold" />
+
+        <TextView
+            android:id="@+id/viewrecordTotalAmount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/viewrecordTripBudgetText"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="92dp"
+            android:padding="3dp"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/viewrecordBalanceText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/viewrecordTripLabelText"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="183dp"
+            android:padding="3dp"
+            android:text="@string/balance"
+            android:textSize="15sp"
+            android:textStyle="italic|bold" />
+
+        <TextView
+            android:id="@+id/viewrecordBalance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/viewrecordTripLabelText"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="242dp"
+            android:padding="3dp"
+            android:textSize="15sp" />
+
+
+        <TextView
+            android:id="@+id/viewrecordTripDescriptionText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/viewrecordTotalAmountText"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="2dp"
+            android:padding="3dp"
+            android:text="@string/description"
+            android:textSize="15sp"
+            android:textStyle="italic|bold"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/viewrecordTripDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/viewrecordTripDescriptionText"
+            android:layout_alignParentStart="true"
+            android:padding="3dp"
+            android:textSize="15sp"
+            android:visibility="gone"/>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+   android:id="@+id/viewrecordButtonLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/viewrecordTotalAmountText" >
+        <Button
+            android:id="@+id/viewrecordExchanceRate"
+            android:layout_width="140dp"
+            android:layout_height="30dp"
+            android:background="@drawable/round_button"
+            android:text="@string/edit_exchange_rate"
+            android:padding="5dp"
+            android:shadowColor="#4A4A4A"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="25"
+            android:layout_marginTop="5dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintRight_toLeftOf="@+id/viewrecordViewChart"
+            ></Button>
+    <Button
+        android:id="@+id/viewrecordViewChart"
+        android:layout_width="140dp"
+        android:layout_height="30dp"
+        android:background="@drawable/round_button"
+        android:text="@string/view_chart"
+        android:padding="5dp"
+        android:shadowColor="#4A4A4A"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="25"
+        android:layout_marginTop="5dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/viewrecordExchanceRate"
+        ></Button>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+        <TextView
+            android:id="@+id/viewrecordDetailsText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/viewrecordButtonLayout"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:gravity="center"
+            android:text="@string/trip_details"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="20sp"
+            android:layout_marginTop="5dp"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/viewrecordRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/viewrecordDetailsText"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true" />
+
+        <TextView
+            android:id="@+id/viewrecordNoRecordText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/viewrecordDetailsText"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginEnd="15dp"
+            android:gravity="center"
+            android:textColor="@color/colorLightRed"
+            android:textSize="20sp"
+            android:textStyle="italic" />
+    </RelativeLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/viewrecordFAB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@android:drawable/ic_input_add"
+        app:backgroundTint="#E91E63"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

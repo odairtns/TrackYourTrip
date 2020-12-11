@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="25dp">
+
+    <TextView
+        android:id="@+id/addexptypeExpTypeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="@string/exp_type"
+        android:textSize="20sp"
+        android:layout_gravity="center"
+        android:textStyle="italic|bold"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        />
+    <EditText
+        android:id="@+id/addexptypeExpType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:inputType="text"
+        android:layout_marginStart="150dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="10dp"
+        />
+
+
+
+
+</RelativeLayout>

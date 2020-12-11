@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="2dp">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/viewtriptrecordCardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_margin="@dimen/cardview_compat_inset_shadow"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:background="@color/cardview_dark_background">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="3dp"
+            android:layout_marginBottom="5dp">
+
+            <TextView
+                android:id="@+id/viewtriptrecordDateText"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:text="@string/date"
+                android:textSize="15sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/viewtriptrecordInfoButton"
+                app:layout_constraintBottom_toBottomOf="@+id/viewtriptrecordInfoButton"
+                android:textStyle="bold|italic"/>
+
+            <TextView
+                android:id="@+id/viewtriptrecordDate"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:textSize="15sp"
+                app:layout_constraintTop_toTopOf="@+id/viewtriptrecordInfoButton"
+                app:layout_constraintBottom_toBottomOf="@+id/viewtriptrecordInfoButton"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginStart="105dp"/>
+
+<!--
+            <Button
+                android:id="@+id/viewtriptrecordInfoButton"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="5dp"
+                android:background="@android:drawable/ic_menu_info_details"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintRight_toRightOf="@+id/viewtriptrecordInfoButtonText"
+                app:layout_constraintLeft_toLeftOf="@+id/viewtriptrecordInfoButtonText"
+                ></Button>
+-->
+
+            <Button
+                android:id="@+id/viewtriptrecordInfoButton"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="5dp"
+                android:background="@android:drawable/ic_menu_info_details"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintRight_toLeftOf="@+id/viewtriptrecordUpdateButton"
+                android:layout_marginRight="20dp"
+                ></Button>
+
+                        <TextView
+                            android:id="@+id/viewtriptrecordInfoButtonText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/details"
+                            app:layout_constraintTop_toBottomOf="@+id/viewtriptrecordInfoButton"
+                            app:layout_constraintRight_toLeftOf="@+id/viewtriptrecordUpdateButtonText"
+                            android:layout_marginRight="20dp"
+                            android:visibility="gone"
+                            ></TextView>
+<!--
+                        <Button
+                            android:id="@+id/viewtriptrecordUpdateButton"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:background="@android:drawable/ic_menu_edit"
+                            app:layout_constraintRight_toRightOf="@+id/viewtriptrecordUpdateButtonText"
+                            app:layout_constraintLeft_toLeftOf="@+id/viewtriptrecordUpdateButtonText"
+                            app:layout_constraintTop_toTopOf="@+id/viewtriptrecordInfoButton"
+                            />
+            -->
+            <Button
+                android:id="@+id/viewtriptrecordUpdateButton"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@android:drawable/ic_menu_edit"
+                app:layout_constraintEnd_toStartOf="@+id/viewtriptrecordDelete"
+                android:layout_marginRight="20dp"
+                app:layout_constraintTop_toTopOf="@+id/viewtriptrecordInfoButton"
+                />
+                        <TextView
+                            android:id="@+id/viewtriptrecordUpdateButtonText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/update"
+                            app:layout_constraintTop_toTopOf="@+id/viewtriptrecordInfoButtonText"
+                            app:layout_constraintEnd_toStartOf="@+id/viewtriptrecordDeleteText"
+                            android:layout_marginRight="20dp"
+                            android:visibility="gone"
+                            ></TextView>
+<!--
+                        <Button
+                            android:id="@+id/viewtriptrecordDelete"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:background="@android:drawable/ic_menu_delete"
+                            app:layout_constraintRight_toRightOf="@+id/viewtriptrecordDeleteText"
+                            app:layout_constraintLeft_toLeftOf="@+id/viewtriptrecordDeleteText"
+                            app:layout_constraintTop_toTopOf="@+id/viewtriptrecordInfoButton"
+                            ></Button>
+-->
+            <Button
+                android:id="@+id/viewtriptrecordDelete"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@android:drawable/ic_menu_delete"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/viewtriptrecordInfoButton"
+                ></Button>
+
+                        <TextView
+                            android:id="@+id/viewtriptrecordDeleteText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/delete"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="@+id/viewtriptrecordInfoButtonText"
+                            android:visibility="gone"
+                            ></TextView>
+
+
+                        <View
+                            android:id="@+id/viewtriptDividerHeader"
+                            app:layout_constraintTop_toBottomOf="@+id/viewtriptrecordDeleteText"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintRight_toRightOf="parent"
+                            style="@style/Divider.Horizontal"
+                            android:layout_marginTop="5dp"></View>
+                        <TextView
+                            android:id="@+id/viewtriptrecordExpTypeText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:gravity="center"
+                            android:text="@string/type"
+                            android:textSize="15sp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/viewtriptDividerHeader"
+                            android:textStyle="bold|italic"/>
+
+                        <TextView
+                            android:id="@+id/viewtriptrecordExpType"
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:layout_marginStart="105dp"
+                            android:gravity="center"
+                            android:textSize="15sp"
+                            app:layout_constraintBottom_toBottomOf="@+id/viewtriptrecordExpTypeText"
+                            app:layout_constraintStart_toStartOf="parent" />
+                        <TextView
+                            android:id="@+id/viewtriptrecordPaymentMethodText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:gravity="center"
+                            android:text="@string/payment"
+                            android:textSize="15sp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/viewtriptrecordExpTypeText"
+                            android:textStyle="bold|italic"/>
+
+                        <TextView
+                            android:id="@+id/viewtriptrecordPaymentMethod"
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:layout_marginStart="105dp"
+                            android:gravity="center"
+                            android:textSize="15sp"
+                            app:layout_constraintBottom_toBottomOf="@+id/viewtriptrecordPaymentMethodText"
+                            app:layout_constraintStart_toStartOf="parent" />
+
+                        <TextView
+                            android:id="@+id/viewtriptrecordLocalAmountText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:gravity="center"
+                            android:text="@string/amount"
+                            android:textSize="15sp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/viewtriptrecordPaymentMethodText"
+                            android:textStyle="bold|italic"/>
+
+                        <TextView
+                            android:id="@+id/viewtriptrecordLocalCurrency"
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:layout_marginStart="8dp"
+                            android:focusable="false"
+                            android:gravity="center"
+                            android:textSize="15sp"
+                            app:layout_constraintBottom_toBottomOf="@+id/viewtriptrecordLocalAmountText"
+                            app:layout_constraintStart_toEndOf="@id/viewtriptrecordLocalAmountText"
+                            android:textStyle="bold|italic"
+                            />
+
+                        <TextView
+                            android:id="@+id/viewtriptrecordLocalAmount"
+                            android:layout_width="100dp"
+                            android:layout_height="30dp"
+                            android:layout_marginStart="105dp"
+                            android:textSize="15sp"
+                            app:layout_constraintBottom_toBottomOf="@+id/viewtriptrecordLocalCurrency"
+                            app:layout_constraintStart_toStartOf="parent"
+                            android:gravity="center_vertical"/>
+
+
+                        <TextView
+                            android:id="@+id/viewtriptrecordStdAmountText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:text="BRL"
+                            android:textSize="15sp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="@id/viewtriptrecordLocalAmountText"
+                            android:gravity="center_vertical"
+                            android:layout_marginStart="225dp"
+                            android:textStyle="bold|italic"/>
+
+                        <TextView
+                            android:id="@+id/viewtriptrecordStdAmount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:layout_marginStart="15dp"
+                            android:textSize="15sp"
+                            app:layout_constraintTop_toTopOf="@+id/viewtriptrecordStdAmountText"
+                            app:layout_constraintStart_toEndOf="@+id/viewtriptrecordStdAmountText"
+                            android:gravity="center_vertical"
+                            />
+
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.cardview.widget.CardView>
+            </RelativeLayout>

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <TextView
+            android:id="@+id/updatetripcurrencyStdCurrencyText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/std_currency_"
+            android:textSize="20sp"
+            android:layout_gravity="center"
+            android:textStyle="italic|bold"
+            app:layout_constraintTop_toTopOf="@+id/updatetripcurrencyStdCurrency"
+            app:layout_constraintBottom_toBottomOf="@+id/updatetripcurrencyStdCurrency"
+            app:layout_constraintLeft_toLeftOf="parent"
+            />
+        <EditText
+            android:id="@+id/updatetripcurrencyStdCurrency"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="190dp"
+            android:textSize="20sp"
+            android:layout_gravity="center_vertical"
+            app:layout_constraintLeft_toRightOf="@+id/updatetripcurrencyStdCurrencyText"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="10dp"
+            android:focusable="false"
+
+
+            />
+    <TextView
+        android:id="@+id/updatetripcurrencyCurrencyText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/currency"
+        android:textSize="20sp"
+        android:layout_gravity="center"
+        android:textStyle="italic|bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/updatetripcurrencyCurrency"
+        app:layout_constraintBottom_toBottomOf="@+id/updatetripcurrencyCurrency"
+
+
+        />
+    <EditText
+        android:id="@+id/updatetripcurrencyCurrency"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="190dp"
+        android:textSize="20sp"
+        android:inputType="text"
+        app:layout_constraintLeft_toLeftOf="@+id/updatetripcurrencyStdCurrency"
+        app:layout_constraintTop_toBottomOf="@+id/updatetripcurrencyStdCurrency"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="10dp"
+        android:focusable="false"
+
+        />
+
+        <TextView
+            android:id="@+id/updatetripcurrencyExgRateText"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/exg_rate"
+            android:textSize="20sp"
+            android:layout_gravity="center_vertical"
+            android:textStyle="italic|bold"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/updatetripcurrencyExgRate"
+            app:layout_constraintBottom_toBottomOf="@+id/updatetripcurrencyExgRate"
+            />
+
+    <EditText
+        android:id="@+id/updatetripcurrencyExgRate"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginEnd="10dp"
+        android:gravity="center_vertical"
+        android:inputType="numberDecimal"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toLeftOf="@+id/updatetripcurrencyStdCurrency"
+        app:layout_constraintTop_toBottomOf="@+id/updatetripcurrencyCurrency"
+        android:layout_marginStart="190dp"
+        android:layout_marginTop="10dp"
+
+        />
+
+    <TextView
+            android:id="@+id/updatetripcurrencyDisplayOrderText"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/order"
+            android:textSize="20sp"
+            android:layout_gravity="center_vertical"
+            android:textStyle="italic|bold"
+            app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/updatetripcurrencyDisplayOrder"
+        app:layout_constraintBottom_toBottomOf="@+id/updatetripcurrencyDisplayOrder"
+
+        />
+        <EditText
+            android:id="@+id/updatetripcurrencyDisplayOrder"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:inputType="number"
+            android:layout_marginStart="190dp"
+            android:gravity="center"
+            android:textSize="20sp"
+            app:layout_constraintLeft_toLeftOf="@+id/updatetripcurrencyStdCurrency"
+            app:layout_constraintTop_toBottomOf="@+id/updatetripcurrencyExgRate"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="10dp"
+            />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

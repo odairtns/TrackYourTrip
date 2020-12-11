@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Activities.TripCurrencies"
+    tools:showIn="@layout/activity_trip_currencies">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintBottom_toBottomOf="parent">
+    <TextView
+        android:id="@+id/tripcurrencyStdCurrencyText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:text="@string/std_currency_"
+        android:textSize="14sp"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="10dp"
+        android:textStyle="bold|italic"
+
+        />
+    <TextView
+        android:id="@+id/tripcurrencyStdCurrency"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/tripcurrencyStdCurrencyText"
+        android:layout_alignTop="@+id/tripcurrencyStdCurrencyText"
+        android:layout_marginStart="5dp"
+        android:textSize="14sp"
+        android:textStyle="bold|italic"
+        />
+    <TextView
+        android:id="@+id/tripcurrencyDateUpdatedText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/tripcurrencyStdCurrencyText"
+        android:text="@string/date_updated"
+        android:textSize="14sp"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="10dp"
+        android:textStyle="bold|italic"
+        />
+    <TextView
+        android:id="@+id/tripcurrencyDateUpdated"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/tripcurrencyDateUpdatedText"
+        android:layout_alignTop="@+id/tripcurrencyDateUpdatedText"
+        android:layout_marginStart="5dp"
+        android:textSize="14sp"
+        android:textStyle="bold|italic"
+        />
+    <TextView
+        android:id="@+id/tripcurrencyTimeUpdatedText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/tripcurrencyDateUpdatedText"
+        android:text="@string/time_updated"
+        android:textSize="14sp"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="10dp"
+        android:textStyle="bold|italic"
+        />
+    <TextView
+        android:id="@+id/tripcurrencyTimeUpdated"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/tripcurrencyTimeUpdatedText"
+        android:layout_alignTop="@+id/tripcurrencyTimeUpdatedText"
+        android:layout_marginStart="5dp"
+        android:textSize="14sp"
+        android:textStyle="bold|italic"
+        />
+
+    <Button
+        android:id="@+id/tripcurrencyRefreshButton"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="5dp"
+        android:background="@android:drawable/ic_popup_sync"
+        android:backgroundTint="#1565C0"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/tripcurrencyRefreshButtonText"
+        android:layout_alignRight="@+id/tripcurrencyRefreshButtonText"
+/>
+    <TextView
+        android:id="@+id/tripcurrencyRefreshButtonText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/update"
+        android:layout_below="@+id/tripcurrencyRefreshButton"
+        android:gravity="center_horizontal"
+        android:textAlignment="center"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="30dp"
+        ></TextView>
+
+    <!--
+
+
+        <TextView
+            android:id="@+id/tripcurrencyDisplayOrder"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@id/tripcurrencyTimeUpdatedText"
+            android:text="@string/order"
+            android:textSize="20sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:textStyle="italic"
+            android:textAlignment="center"
+            />
+
+        <TextView
+            android:id="@+id/tripcurrencyCurrency"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/tripcurrencyDisplayOrder"
+            android:layout_alignTop="@+id/tripcurrencyDisplayOrder"
+            android:layout_marginStart="5dp"
+            android:textSize="20sp"
+            android:textStyle="italic"
+            android:text="@string/currency"
+            android:textAlignment="center"
+            />
+        <TextView
+            android:id="@+id/tripcurrencyExgRate"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/tripcurrencyCurrency"
+            android:layout_alignTop="@+id/tripcurrencyCurrency"
+            android:layout_marginStart="5dp"
+            android:textSize="20sp"
+            android:textStyle="italic"
+            android:text="@string/rate"
+            android:textAlignment="center"
+            />
+
+
+
+
+
+    End new data
+    -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/tripcurrencyRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tripcurrencyTimeUpdatedText"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        />
+
+</RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

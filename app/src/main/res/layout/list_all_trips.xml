@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentStart="true"
+    android:layout_alignParentTop="true"
+    android:layout_alignParentEnd="true"
+    android:backgroundTint="#42BDB1"
+    android:padding="5dp"
+    >
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/listripsCardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/cardview_compat_inset_shadow"
+        app:cardCornerRadius="5dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:padding="5dp"
+            >
+
+            <TextView
+                android:id="@+id/listripsLabelText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/trip"
+                android:textSize="20sp"
+                android:textStyle="italic|bold"
+                android:layout_alignTop="@+id/listripsEditButton"
+                android:layout_alignBottom="@+id/listripsEditButtonText"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/listripsLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="95dp"
+                android:textSize="20sp"
+                android:layout_alignTop="@+id/listripsEditButton"
+                android:layout_alignBottom="@+id/listripsEditButtonText"
+                android:gravity="center"
+
+                />
+<!--
+            <Button
+                android:id="@+id/listripsEditButton"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_alignParentTop="true"
+                android:background="@android:drawable/ic_menu_edit"
+                android:layout_alignEnd="@+id/listripsEditButtonText"
+                android:layout_alignStart="@+id/listripsEditButtonText"
+                />
+-->
+
+            <Button
+                android:id="@+id/listripsEditButton"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_alignParentTop="true"
+                android:background="@android:drawable/ic_menu_edit"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@+id/listripsDeleteButton"
+                />
+
+            <TextView
+                android:id="@+id/listripsEditButtonText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/update"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@+id/listripsDeleteButtonText"
+                android:layout_below="@+id/listripsEditButton"
+                android:visibility="gone"
+                ></TextView>
+
+<!--
+            <Button
+                android:id="@+id/listripsDeleteButton"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_alignEnd="@+id/listripsDeleteButtonText"
+                android:layout_alignStart="@+id/listripsDeleteButtonText"
+                android:layout_alignParentTop="true"
+                android:background="@android:drawable/ic_menu_delete"
+                />
+-->
+            <Button
+                android:id="@+id/listripsDeleteButton"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:background="@android:drawable/ic_menu_delete"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="10dp"
+                />
+
+            <TextView
+                android:id="@+id/listripsDeleteButtonText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/delete"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@+id/listripsDeleteButton"
+                android:layout_marginEnd="10dp"
+                android:visibility="gone"
+                ></TextView>
+
+            <View
+                android:id="@+id/listripsDividerHeader"
+                android:layout_below="@+id/listripsEditButtonText"
+                style="@style/Divider.Horizontal"
+                android:layout_marginTop="5dp"></View>
+            <TextView
+                android:id="@+id/listripsTripBudgetText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/listripsDividerHeader"
+                android:layout_alignParentStart="true"
+                android:padding="3dp"
+                android:text="@string/budget"
+                android:textSize="15sp"
+                android:textStyle="italic|bold" />
+
+            <TextView
+                android:id="@+id/listripsTripBudget"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/listripsDividerHeader"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="92dp"
+                android:padding="3dp"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/listripsTotalAmountText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/listripsTripBudgetText"
+                android:layout_alignParentStart="true"
+                android:padding="3dp"
+                android:text="@string/amount"
+                android:textSize="15sp"
+                android:textStyle="italic|bold" />
+
+            <TextView
+                android:id="@+id/listripsStdCurrency"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/listripsTripBudgetText"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="58dp"
+                android:padding="3dp"
+                android:textSize="15sp"
+                android:textStyle="italic|bold" />
+
+            <TextView
+                android:id="@+id/listripsTotalAmount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/listripsTripBudgetText"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="92dp"
+                android:padding="3dp"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/listripsBalanceText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/listripsDividerHeader"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="183dp"
+                android:padding="3dp"
+                android:text="@string/balance"
+                android:textSize="15sp"
+                android:textStyle="italic|bold" />
+
+            <TextView
+                android:id="@+id/listripsBalance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/listripsDividerHeader"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="242dp"
+                android:padding="3dp"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/listripsDescriptionText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/listripsTotalAmount"
+                android:layout_marginTop="5dp"
+                android:text="@string/trip_info"
+                android:textSize="15sp"
+                android:textStyle="italic|bold"/>
+
+            <MultiAutoCompleteTextView
+                android:id="@+id/listripsDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/listripsDescriptionText"
+                android:layout_marginEnd="10dp"
+                android:focusable="false"
+                android:textSize="15sp"
+                />
+
+            <Button
+                android:id="@+id/listripsDetailsButton"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_below="@+id/listripsDescription"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/round_button"
+                android:text="@string/clickfordetails"
+                android:textSize="15sp" />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>
